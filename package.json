@@ -2,7 +2,7 @@
   "name": "socket",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "dist/server/server.js",
   "scripts": {
     "start": "tsc && node ./dist/server/server.js"
   },
