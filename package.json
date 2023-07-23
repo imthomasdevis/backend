@@ -2,9 +2,10 @@
   "name": "socket",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server/server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "tsc && node ./dist/server/server.js"
+    "build": "tsc",
+    "start": "node ./dist/server/server.js"
   },
   "keywords": [],
   "author": "",
