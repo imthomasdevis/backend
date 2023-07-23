@@ -13,7 +13,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 // @ts-ignore
-const db_js_1 = require("../../db.js");
+const db_js_1 = require("./db.js");
 const app = express();
 const port = process.env.PORT || 8000;
 app.use(bodyParser.json());
