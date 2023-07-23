@@ -2,7 +2,7 @@ require("dotenv").config();
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 const uri = process.env.MONGODB_URI;
-console.log("uri", uri);
+// console.log("uri", uri);
 // DB IS PROTECTED BY IP ADDRESS
 
 const client = new MongoClient(uri, {
