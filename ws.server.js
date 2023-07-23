@@ -14,10 +14,15 @@ dotenv.config();
 const express = require("express");
 const http = require("http");
 const WebSocket = require("ws");
+const cors = require("cors");
 const bson_1 = require("bson");
 // @ts-ignore
 const db_js_1 = require("./db.js");
 const app = express();
+app.use(cors());
+app.get("/", (req, res) => {
+    res.send({ alive: true, message: "websocket functioning properly" });
+});
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 console.log("token", process.env.AUTH_TOKEN);
